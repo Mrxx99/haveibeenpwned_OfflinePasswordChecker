@@ -9,7 +9,7 @@ namespace CheckerLibrary
         {
             var bytes = CalculateHashBytes(input);
 
-            return BitConverter.ToString(bytes).Replace("-", string.Empty).ToLowerInvariant();
+            return BitConverter.ToString(bytes).Replace("-", string.Empty);
         }
 
         public static byte[] CalculateHashBytes(string input)
